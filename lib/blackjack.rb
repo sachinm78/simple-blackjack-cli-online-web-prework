@@ -35,7 +35,7 @@ def invalid_command
   prompt_user
 end
 
-def hit?
+def hit?(current_card_value)
   prompt_user
   user_input = get_user_input
   while user_input != "h" && user_input != "s"
