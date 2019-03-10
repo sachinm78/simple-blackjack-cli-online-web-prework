@@ -30,6 +30,11 @@ def initial_round
   num1 + num2
 end
 
+def invalid_command
+  puts "Please enter a valid command"
+  prompt_user
+end
+
 def hit?(current_card_value)
   prompt_user
   user_input = get_user_input
@@ -44,10 +49,7 @@ def hit?(current_card_value)
   return current_card_value
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-  prompt_user
-end
+
 
 #####################################################
 # get every test to pass before coding runner below #
